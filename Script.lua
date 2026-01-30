@@ -335,9 +335,9 @@ concacsss = Adel and "Adel" or "YMF"
 local A =
     z:MakeWindow(
     {
-        Name = "Blox Fruit (Adel Hub)",
+        Name = "Blox Fruit (Danger Panel)",
         IntroEnabled = false,
-        IntroText = "Adel Hub Library",
+        IntroText = "Danger Panel Library",
         IntroIcon = "rbxassetid://13779309461",
         HidePremium = false,
         SaveConfig = false,
