@@ -1,8 +1,7 @@
-local Library =
-loadstring(game:HttpGet("https://raw.githubusercontent.com/AnhTuanDzai-Hub/UIMenu/
-refs/heads/main/thanhipia.lua"))() -- LIBRARY
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/AnhTuanDzai-Hub/UIMenu/refs/heads/main/thanhipia.lua"))() -- LIBRARY
 
-local Window = Library:CreateWindow('Tuấn Anh IOS')
+-- Renamed to Danger Panel
+local Window = Library:CreateWindow('Danger Panel')
 
 local Tab = {
     Tab_1 = Window:addTab('#Home'),
@@ -17,11 +16,10 @@ local Tab = {
     Tab_5 = Window:addTab('#Teleport & Status'),
     Tab_6 = Window:addTab('#Shop'),
     Tab_7 = Window:addTab('#Misc')
-
 }
 
 local Home_Right = Tab.Tab_1:addSection() -- HOME RIGHT SECTION
-local Main_Home = Home_Right:addMenu("#Home")
+local Main_Home = Home_Right:addMenu("Danger Panel") -- Renamed Menu
 
 getgenv().WalkSpeedValue = 26
 Main_Home:addTextbox("Speed Hack", getgenv().WalkSpeedValue, function(speedfunc)
