@@ -1,7 +1,6 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/AnhTuanDzai-Hub/UIMenu/refs/heads/main/thanhipia.lua"))() -- LIBRARY
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/AnhTuanDzai-Hub/UIMenu/refs/heads/main/thanhipia.lua"))()
 
--- Renamed to Danger Panel
-local Window = Library:CreateWindow('Danger Panel')
+local Window = Library:CreateWindow('Danger Panel') -- Changed name here
 
 local Tab = {
     Tab_1 = Window:addTab('#Home'),
@@ -18,8 +17,8 @@ local Tab = {
     Tab_7 = Window:addTab('#Misc')
 }
 
-local Home_Right = Tab.Tab_1:addSection() -- HOME RIGHT SECTION
-local Main_Home = Home_Right:addMenu("Danger Panel") -- Renamed Menu
+local Home_Right = Tab.Tab_1:addSection() 
+local Main_Home = Home_Right:addMenu("Danger Panel") -- Changed name here
 
 getgenv().WalkSpeedValue = 26
 Main_Home:addTextbox("Speed Hack", getgenv().WalkSpeedValue, function(speedfunc)
@@ -119,18 +118,16 @@ e:IsA("DepthOfFieldEffect") then
 end)
 
 local Home_Left = Tab.Tab_1:addSection()
-local Changelog = Home_Left:addMenu("Thông Tin")
-Changelog:addChangelog('Hê Con Mẹ Nó Lô Chúng Mày')
-Changelog:addChangelog('Hello Everyone ❤️')
-Changelog:addChangelog('Menu : Tuấn Anh IOS ' )
-Changelog:addChangelog('Thông Tin Liên Hệ')
-Changelog:addChangelog('YTB: Tuấn Anh IOS')
-Changelog:addChangelog('Tik Tok: Tuấn Anh IOS')
-Changelog:addChangelog('FB : Tuấn Anh(TúnnAngg) ')
-Changelog:addChangelog('Tạm Biệt Tất Cả Chúng Mày')
+local Changelog = Home_Left:addMenu("Danger Panel Info")
+Changelog:addChangelog('Welcome to Danger Panel')
+Changelog:addChangelog('Status: Operational')
+Changelog:addChangelog('Menu Name: Danger Panel')
+Changelog:addChangelog('Everything Loaded Successfully')
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/AnhTuanDzai-Hub/
-FastAttackLoL/refs/heads/main/FastAttack.lua"))()
+-- This ensures the library actually displays the first tab
+Window:setCurrentTab(Tab.Tab_1)
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AnhTuanDzai-Hub/FastAttackLoL/refs/heads/main/FastAttack.lua"))()
 ----------------------------------------------------//-----------------------------
 -----------------------
 --// PATH
@@ -11569,3 +11566,5 @@ spawn(function()
      end
 end)
 
+
+ Window:setCurrentTab(Tab.Tab_1)
